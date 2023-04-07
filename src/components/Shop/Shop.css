@@ -1,0 +1,19 @@
+.shop-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 30px;
+    position: relative;
+}
+
+.tshirt-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.selected-tshirt {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    text-align: center;
+}
