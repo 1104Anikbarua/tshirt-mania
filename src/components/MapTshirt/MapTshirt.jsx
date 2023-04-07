@@ -12,8 +12,8 @@ const MapTshirt = ({ tshirt, handleAddToCart, clicked }) => {
             <img src={picture} alt="" />
             <p>{name}</p>
             <p>{price}</p>
-            <button
-                onClick={() => handleAddToCart(tshirt)}
+            <button className={checked ? 'disabled' : 'enabled'}
+                disabled={checked ? true : false} onClick={() => handleAddToCart(tshirt)}
             >Add To Cart</button>
         </div>
     );
